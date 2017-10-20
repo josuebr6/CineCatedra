@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<script src="js/ejem.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<head>
+	<title>Ministerio de Turismo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+<body>
+<header>
+<div id="imgpag">
+			<img src="img/contacto1.jpg">
+ </div>
+<nav>
+		<div id="logo">Ministerio de Turismo</div>
+		<label for="drop" class="toggle icono">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</label>
+		<input type="checkbox" id="drop">
+		<ul class="menu">
+			<li><a href="index.html">Inicio</a></li>
+			<li>
+				
+				<label for="drop-1" class="toggle">Zona Occidental</label>
+				<a href="#">Zona Occidental</a>
+				<input type="checkbox" id="drop-1"/>
+				<ul>
+					<li><a href="SantaAna.html">Santa Ana</a></li>
+					<li><a href="Ahuachapan.html">Ahuachapan</a></li>
+					<li><a href="Sonsonate.html">Sonsonate</a></li>
+				</ul>
+			</li>
+			<li>
+				<!--Elemento desplegable del segundo nivel -->
+				<label for="drop-2" class="toggle">Zona Central</label>
+				<a href="#">Zona Central</a>
+				<input type="checkbox" id="drop-2"/>
+				<ul>
+					<li><a href="SanSalvador.html">San Salvador</a></li>
+						<li><a href="LaLibertad.html">La libertad</a></li>
+						<li><a href="Cuscatlan.html">Cuscatlán</a></li>
+						<li><a href="Chalatenango.html">Chalatenango</a></li>
+						<li><a href="Cabañas.html">Cabañas</a></li>
+						<li><a href="lapaz.html">La Paz</a></li>
+						<li><a href="SanVicente.html">San Vicente</a></li>
+					</li>
+				</ul>
+			<li>
+				<!-- Elemento desplegable de segundo nivel -->
+				<label for="drop-3" class="toggle">Zona Oriental</label>
+				<a href="#">Zona Oriental</a>
+				<input type="checkbox" id="drop-3"/>
+				<ul>
+						<li><a href="Usulutan.html">Usulután</a></li>
+						<li><a href="SanMiguel.html">San Miguel</a></li>
+						<li><a href="Morazan.html">Morazán</a></li>
+						<li><a href="LaUnion.html">La Unión</a></li>
+				</ul>
+			</li>
+			<li><a href="contacto.html">Contactanos</a></li>
+				</ul>
+			
+		</ul>
+	</nav>
+</header>
+		<body>
+	<form id="contacto-frm" name="contacto_frm" action="" method="get">
+		<fieldset>
+			<legend>Contacto</legend>
+			<label for="nombre">Nombre: </label>
+			<input type="text" name="nombre_txt" class="cambio" id="nombre" required="El campo Nombre es requerido" />
+			<br>
+			<br>
+			<label for="apellido">apellido: </label>
+			<input type="text" name="apellido_txt" class="cambio" id="apellido"  required="El campo apellido es requerido"/>
+			<br>
+			<br>
+			<label for="email">Email: </label>
+			<input type="text" name="email_txt" class="cambio" id="email"/ required="este campo no esta escrito correctamente" >
+			<br>
+			<br>
+			<label form="comentarios">Comentarios:</label>
+			<br>
+			<textarea name="comentarios_txa" id="comentarios" cols="50" rows="5" class="cambio"></textarea>
+			<br>
+			<br>
+			<input type="button" id="enviar" class="cambio" name="enviar_btn" value="Enviar"/>
+			<input type="button" id="limpiar" class="cambio" name="limpiar_btn" value="Limpiar" />
+
+		</fieldset>
+	</form>
+			
+
+		<div id="info_izquierda">
+			<article>
+				<h6>Turismo El Salvador, Ayudandote a encontrar los mejores lugares turisticos de nuestro querido El Salvador</h6>
+				<a href="menu/ubicacion/ubicacion.html"><img src="img/contacto10.jpg" id="imgg" alt="Ubicacion" title="Ubicacion" class="transform" ></a>
+				<p><center><b>Nuestro correo:</b></p>
+				<h6><center>TurismoElsalvadorTravel@outlook.com</h6>
+
+			</article>
+			
+		</div>
+		<footer>
+	<p>Universidad Don Bosco | &copy;Copyright Desarrollo De Aplcaciones wed Interpretado En El Cliente</p>
+		<div><a href="https://www.facebook.com/MITURElSalvador/" target=_"black"><img src="img/fb.png"></a><a href="https://www.instagram.com/elsalvadortravel/" target="_black"><img src="img/ins.png"></a><a href="https://twitter.com/miturelsalvador?lang=es" target="_black"><img src="img/tw.png"></a><a href="https://www.youtube.com/channel/UCdXJsUchhGTySSflB9fONNQ" target=":_black"><img src="img/you.png"></a></div>
+	</footer>
+	</section>
+	<br>
+	<br>
+
+	
+	</body>
+</html>

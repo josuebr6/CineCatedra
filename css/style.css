@@ -1,0 +1,358 @@
+*{
+	margin:0px;
+	padding:0px;
+	}
+			
+			label ,.toggle, [id^=drop]{
+	display: none;
+}
+/*Reglas de estilo para el menu*/
+nav{
+	margin: 0;
+	padding: 0;
+	background-color: #06769E;
+	/*Obligo a que el nav cubra a los elementos que floten dentro de él*/
+}
+#logo{
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size: 20px;
+	line-height: 60px;
+	color: white;
+}
+nav ul{
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	font-family: 'Advent Pro', sans-serif;
+}
+nav ul li{
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	background-color: #06769E;
+}
+nav a{
+	display: block;
+	padding: 0 20px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 60px;
+	text-decoration: none;
+}
+nav a:hover{
+	background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul ul{
+	display: none;
+	position: absolute;
+	top: 60px;
+	font-family: 'Advent Pro', sans-serif;
+}
+nav ul li:hover>ul{
+	display: block;
+}
+/*Elementos del segundo nivel*/
+nav ul ul li{
+	width: 170px;
+	float: none;
+	display: block;
+	position: relative;
+	/*Se muestran abajo del padre*/
+}
+/*Elementos tercer nivel*/
+nav ul ul ul li{
+	position: relative;
+	top: -60px;
+	left: 170px;
+	/*El primer elemento se muestra a la misma altura del padre y
+	a la derecha de él*/
+}
+nav:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*Media Queries
+----------------------------------*/
+@media all and (max-width: 768px){
+
+	/*Media queries para tablet y smartphones.*/
+	#imgpag{
+		width: 100%;
+		height: 10%;
+	}
+	nav{ margin: 0;	}
+	#logo{
+		display: inline-block;
+		padding: 0 0 0 20px;
+		text-align: center;
+	}
+	nav ul li{
+		display: block;
+		width: 100%;
+		border-top: 1px solid white;
+		font-family: 'Advent Pro', sans-serif;
+	}
+	label.toggle{
+		display: block;
+		background-color: #06769E;
+		padding: 0 20px;
+		color: #fff;
+		font-size: 20px;
+		line-height: 60px;
+		text-decoration: none;
+		border: none;
+		cursor: pointer;
+	}
+	label.icono{
+		background-color: #06769E;
+		border-left: 1px solid white;
+		display: inline-block;
+		float: right;
+	}
+	.menu{
+		/*Oculto el menu de navegacion*/
+		display: none;
+	}
+	[id^=drop]:checked + ul{
+		/*Muestro la lista adyacente al checkbox activo
+		El checkbox debe tener un id que comience con "drop"*/
+		display: block;
+		width: 100%;
+	}
+	.toggle + a{
+		display: none;
+	}
+	/*Para la lista de los niveles internos*/
+	nav ul ul{
+		float: none;
+		position: static;
+		color: #ffffff;
+	}
+	/*Para los elementos de los niveles internos*/
+	nav ul ul li{
+		display: block;
+		width: 100%;
+	}
+	/*Para los elementos del tercer nivel*/
+	nav ul ul ul li{
+		position: static;
+	}
+	/*Los niveles internos ya no se desplegaran cuando se haga hover sobre
+	el elemento padre sino solo cuando se active el checkbox*/
+	nav ul ul li:hover>ul,
+	nav ul li:hover>ul{display: none;}
+	/*Rellenos para los elementos del segundo nivel*/
+	nav ul ul .toggle,
+	nav ul ul a{
+		padding: 0 40px;
+	}
+	/*Rellenos para los elementos del tercer nivel*/
+	nav ul ul ul a{
+		padding: 0 80px;
+	}
+	nav a:hover,
+	nav ul ul ul a{
+		background-color: #000000;
+	}
+	nav ul li ul li .toggle,
+	nav ul ul a{
+		background-color: #212121;
+	}
+}
+	#imgpag img{
+		width: 100%;
+		height: 450px;
+	}
+
+
+#contenido{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 3%;
+	width: 90%;
+	text-align: justify;
+	background: #34495E;
+	color: white;
+	font-size: 18px;
+	font-family: 'Poiret One', cursive;
+	padding: 12px;
+	
+border-radius: 18px 16px 44px 37px;
+-moz-border-radius: 18px 16px 44px 37px;
+-webkit-border-radius: 18px 16px 44px 37px;
+border: 2px solid #868678;
+}
+iframe{
+	margin-top:2px;
+	margin-left: 0px;
+	width: 100%;
+	
+}
+footer{
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	margin-left: 0px;
+	padding-bottom: 30px;
+	float: left;
+	background:#34495E;
+	background-size: 100%;
+}
+footer img{
+	margin-right: 10px;
+	width: 60px;
+	height: 60px;
+	margin-top: 50px;
+}
+
+
+footer p{
+	width: 30%;
+	height: 40%;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 50px;
+	margin-top: 40px;
+	float: left;
+	font-family: 'Lobster', cursive;
+
+}
+footer img:hover{
+	transform: scale(1.5);
+	transition: all 1s;
+
+}
+
+#contenido h1{
+	font-family: 'Pacifico', cursive;
+	color: #02293B;
+
+}
+.auto{
+	width: 100%;
+	height: 110%;
+	margin-top: 0%;
+	padding-top: 0%;
+	overflow: hidden;
+
+	box-sizing: border-box;
+}
+
+.auto ul {
+	display: flex;
+	padding: 0px;
+	width: 300%;
+	height: 300%;
+	animation: cambio 10s infinite alternate;
+}
+
+.auto li {
+	width: 100%;
+	list-style: none;
+}
+
+.auto img {
+	width: 100%;
+	height: 103.5%;
+}
+.auto img{
+	width: 100%;
+	height: 100%;
+}
+@keyframes cambio{
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+
+fieldset{
+	border: thin solid skyblue;
+	background:white;
+	border-radius: 1em;
+	padding: 0;
+
+}
+
+form{
+	margin: .5em auto;
+	float: right;
+}
+
+input[type="button"]{
+	background-color: #F60;
+	border: thin solid transparent;
+	border-radius: .5em;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 1em;
+	padding: .5em;
+}
+input[type="button"]:hover{
+
+	background-color: skyblue;
+	border: thin solid #F60;
+	border-radius: 0;
+	color: #F60;	
+}
+
+input[type="radio"], label{
+	cursor: pointer;
+}
+
+input[type="text"], textarea{
+	background-color: #DDD;
+	border: thin solid skyblue;
+	border-radius: 1em;
+	color: #F60;
+	font-size: 1em;
+	padding: .25em;
+}
+
+input[type="text"].focus, textarea.focus{
+	background-color: aliceblue;
+}
+
+textarea{
+	resize: none;
+}
+
+.cambio{
+	-ms-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+}
+
+.focus{
+	box-shadow: .1em .1em .5em rgba(255,102,0);
+	outline: thin solid #F60;
+}
+
+
+legend{
+	color: #F60;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#info_izquierda{
+	margin-right: 40px;
+}
